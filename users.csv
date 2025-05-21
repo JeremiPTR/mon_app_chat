@@ -1,0 +1,4 @@
+﻿name,password,email,failed_login_attempts,logged_in,role
+Jerem,jeremptr,jerem@jerem.com,0,False,admin
+Robert,roberto85,roberto@free.fr,0;False,user
+Hilde,einzweidrei,hildeberlin@german.de,0,False,user
