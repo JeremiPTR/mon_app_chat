@@ -50,7 +50,7 @@ def display_gallery():
     cols = st.columns(3)
     for idx, img in enumerate(image_files):
         with cols[idx % 3]:
-            st.image(os.path.join(image_dir, img), use_column_width=True)
+            st.image(os.path.join(image_dir, img), use_container_width=True)
 
 
 # Accueil
