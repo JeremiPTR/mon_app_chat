@@ -63,7 +63,19 @@ def home():
 def sidebar():
     with st.sidebar:
         st.success(f"Bienvenue {st.session_state.username} 👋")
-        page = st.radio("Navigation", ["Accueil", "Album Photo", "Déconnexion"])
+
+        # Zone principale de navigation
+        page = st.radio("Navigation", ["Accueil", "Album Photo"])
+
+        # Ajout d'un espace pour pousser le bouton en bas
+        st.markdown("""<div style="flex:1;"></div>""", unsafe_allow_html=True)
+
+        # Bouton Déconnexion en bas
+        if st.button("🔓 Déconnexion"):
+            st.session_state.logged_in = False
+            st.session_state.username = None
+            st.rerun()
+
         return page
 
 
