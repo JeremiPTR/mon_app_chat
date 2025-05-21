@@ -25,8 +25,8 @@ def login():
     st.title("Page de connexion")
     users = load_users()
 
-    username = st.text_input("Nom d'utilisateur")
-    password = st.text_input("Mot de passe", type="password")
+    username = st.text_input("Nom d'utilisateur (Jerem)")
+    password = st.text_input("Mot de passe (jeremptr)", type="password")
     login_button = st.button("Se connecter")
 
     if login_button:
